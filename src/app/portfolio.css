@@ -82,6 +82,23 @@ h1, h2, h3 { margin: 0; }
 .mini-cta { padding: 11px 17px; border-radius: 99px; background: var(--text); color: var(--bg); font-size: 13px; font-weight: 700; }
 .menu-btn { display: none; }
 
+/* ----- language toggle ----- */
+.lang-btn {
+  height: 42px; padding: 0 14px; border: 1px solid var(--line); border-radius: 99px; background: transparent;
+  color: var(--muted); font: 700 11px var(--f-body); letter-spacing: 0.8px; cursor: pointer;
+  display: inline-flex; align-items: center; gap: 5px; transition: 0.25s;
+}
+.lang-btn:hover { border-color: var(--accent); }
+.lang-btn i { font-style: normal; opacity: 0.4; }
+.lang-btn .on { color: var(--accent-ink); }
+body.lang-en .hero h1, body.lang-en .section-head h2, body.lang-en .contact-inner h2 { line-height: 1; letter-spacing: -1.5px; font-weight: 600; }
+body.lang-en .about-story .lead { line-height: 1.45; }
+@media (max-width: 620px) {
+  .lang-btn { height: 38px; padding: 0 10px; }
+  .icon-btn { width: 38px; height: 38px; }
+  .nav-actions { gap: 7px; }
+}
+
 /* ----- hero ----- */
 .hero {
   min-height: 100vh; padding-top: 150px; padding-bottom: 80px; display: grid;

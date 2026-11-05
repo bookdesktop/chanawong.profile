@@ -3,16 +3,9 @@
 import { useEffect, useState } from "react";
 import { Menu, Moon, Sun, X } from "lucide-react";
 
-const links = [
-  ["#about", "เกี่ยวกับ"],
-  ["#skills", "ทักษะ"],
-  ["#experience", "ประสบการณ์"],
-  ["#education", "การศึกษา"],
-  ["#training", "อบรม"],
-  ["#contact", "ติดต่อ"],
-];
+const sections = ["about", "skills", "experience", "education", "training", "contact"];
 
-export default function Nav({ initials, email }) {
+export default function Nav({ initials, email, t, lang, onToggleLang }) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [light, setLight] = useState(false);
@@ -42,28 +35,28 @@ export default function Nav({ initials, email }) {
           <span>.</span>
         </a>
         <div className={`nav-links${open ? " open" : ""}`}>
-          {links.map(([href, label]) => (
-            <a key={href} href={href} onClick={() => setOpen(false)}>
-              {label}
+          {sections.map((id) => (
+            <a key={id} href={`#${id}`} onClick={() => setOpen(false)}>
+              {t[id]}
             </a>
           ))}
         </div>
         <div className="nav-actions">
-          <button
-            type="button"
-            className="icon-btn"
-            aria-label="สลับธีม"
-            onClick={() => setLight((v) => !v)}
-          >
+          <button type="button" className="lang-btn" aria-label={t.lang} title={t.lang} onClick={onToggleLang}>
+            <span className={lang === "th" ? "on" : ""}>TH</span>
+            <i>/</i>
+            <span className={lang === "en" ? "on" : ""}>EN</span>
+          </button>
+          <button type="button" className="icon-btn" aria-label={t.theme} onClick={() => setLight((v) => !v)}>
             {light ? <Moon size={18} /> : <Sun size={18} />}
           </button>
           <a className="mini-cta" href={`mailto:${email}`}>
-            จ้างงาน
+            {t.hire}
           </a>
           <button
             type="button"
             className="icon-btn menu-btn"
-            aria-label="เมนู"
+            aria-label={t.menu}
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
           >
