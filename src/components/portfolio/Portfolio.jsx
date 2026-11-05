@@ -107,8 +107,12 @@ export default function Portfolio() {
               {t.hero.title[0]}
               <br />
               {t.hero.title[1]}
-              <br />
-              <em>{t.hero.titleEm}</em>
+              {t.hero.titleEm && (
+                <>
+                  <br />
+                  <em>{t.hero.titleEm}</em>
+                </>
+              )}
             </h1>
             <div className="role-line">
               <span className="role-prefix">{t.hero.rolePrefix}</span>

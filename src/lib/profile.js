@@ -46,7 +46,7 @@ export const content = {
     hero: {
       eyebrow: "พร้อมร่วมงานตำแหน่ง IT SUPPORT & NETWORK",
       title: ["ดูแลระบบไอที", "ให้ทุกงาน"],
-      titleEm: "เดินได้ไม่สะดุด.",
+      titleEm: "",
       rolePrefix: "ตำแหน่ง",
       introPre: "สวัสดีครับ ผม ",
       introMid: " ทำงานด้าน ",
