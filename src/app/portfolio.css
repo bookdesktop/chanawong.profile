@@ -93,6 +93,8 @@ h1, h2, h3 { margin: 0; }
 .lang-btn .on { color: var(--accent-ink); }
 body.lang-en .hero h1, body.lang-en .section-head h2, body.lang-en .contact-inner h2 { line-height: 1; letter-spacing: -1.5px; font-weight: 600; }
 body.lang-en .about-story .lead { line-height: 1.45; }
+body.lang-en .hero h1 { font-size: clamp(40px, 5.4vw, 74px); }
+@media (max-width: 620px) { body.lang-en .hero h1 { font-size: 38px; } }
 @media (max-width: 620px) {
   .lang-btn { height: 38px; padding: 0 10px; }
   .icon-btn { width: 38px; height: 38px; }
