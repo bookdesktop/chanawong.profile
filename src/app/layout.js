@@ -14,8 +14,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="th" className={`${manrope.variable} ${grotesk.variable} ${thai.variable}`}>
-      <body>{children}</body>
+    <html lang="th" suppressHydrationWarning className={`${manrope.variable} ${grotesk.variable} ${thai.variable}`}>
+      <body suppressHydrationWarning>{children}</body>
     </html>
   );
 }
