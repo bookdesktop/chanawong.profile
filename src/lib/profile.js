@@ -140,8 +140,8 @@ export const content = {
     },
     hero: {
       eyebrow: "OPEN TO IT SUPPORT & NETWORK ROLES",
-      title: ["Keeping IT", "running so work"],
-      titleEm: "never stops.",
+      title: ["Taking care of IT", "for every task"],
+      titleEm: "",
       rolePrefix: "Position",
       introPre: "Hi, I'm ",
       introMid: ", working in ",
