@@ -18,16 +18,16 @@ export const gpas = ["3.27", "3.25", "3.50"];
 
 export const marqueeTop = [
   "IT SUPPORT", "NETWORK SYSTEM", "WINDOWS OS", "MS OFFICE", "LAN / WI-FI",
-  "SWITCH LAYER 2 / 3", "ZABBIX MONITORING", "NAS BACKUP", "CCTV", "ERP USER ACCOUNT",
+  "SWITCH LAYER 2 / 3", "CISCO SWITCH L2+", "ARUBA SWITCH L3", "FIREWALL FORTIGATE-100F", "PORT FORWARDING", "SITE-TO-SITE VPN", "OMADA CONTROLLER", "UNIFI ACCESS POINT", "ZABBIX MONITORING", "NAS BACKUP", "CCTV", "ERP USER ACCOUNT", "GOOGLE WORKSPACE", "MICROSOFT 365",
 ];
 export const marqueeBottom = [
-  "TROUBLESHOOTING", "HARDWARE", "USER SUPPORT", "DATA RECOVERY", "MAINTENANCE PLAN",
+  "TROUBLESHOOTING", "HARDWARE", "USER SUPPORT", "DATA RECOVERY", "MAINTENANCE PLAN", "KPI DOCUMENTATION", "ISO 9001 DOCUMENTATION",
 ];
 
 export const skillChips = [
   ["Windows OS", "MS Office", "Troubleshooting", "User Support", "Hardware", "Peripheral"],
-  ["LAN / Wi-Fi", "Switch Layer 2", "Switch Layer 3", "Zabbix", "NAS", "Backup & Recovery"],
-  ["CCTV", "ERP User Account", "Folder Share", "IT Stock", "PR (Purchase Request)", "Maintenance Plan"],
+  ["LAN / Wi-Fi", "Switch Layer 2", "Switch Layer 3", "Cisco Switch L2+", "Aruba Switch L3", "Firewall FortiGate-100F", "Firewall Policy", "Port Forwarding", "Site-to-Site VPN", "TP-Link Omada Controller", "UniFi Software", "Access Point / SSID", "Zabbix", "NAS", "Backup & Recovery"],
+  ["CCTV", "ERP User Account", "Google Workspace", "Microsoft 365", "Folder Share", "IT Stock", "PR (Purchase Request)", "Maintenance Plan", "KPI Documentation", "ISO 9001 Documentation"],
 ];
 
 // ข้อความแยกตามภาษา
@@ -103,13 +103,18 @@ export const content = {
       "วางแผนและจัดทำ Maintenance Plan สำหรับอุปกรณ์ฮาร์ดแวร์ เช่น คอมพิวเตอร์ อุปกรณ์เครือข่าย และอุปกรณ์ต่อพ่วง",
       "แก้ไขปัญหาซอฟต์แวร์และโปรแกรมพื้นฐานที่ใช้งานภายในองค์กร เพื่อให้ระบบสามารถทำงานได้อย่างราบรื่น",
       "ดูแลและตั้งค่า Switch ระดับ Layer 2 และ Layer 3 (Basic Configuration) เพื่อรองรับการทำงานของระบบเครือข่าย",
+      "มีความรู้ด้าน Switch Cisco Layer 2+ และ Switch Aruba Layer 3",
+      "มีความรู้ด้าน Firewall FortiGate-100F โดยเคยเพิ่ม Policy ทำ Port Forwarding และทำ Site-to-Site VPN ระหว่างสำนักงานกับ Cloud",
       "ให้การสนับสนุนและแก้ไขปัญหาด้านฮาร์ดแวร์แก่ผู้ใช้งาน (User Support) ทั้งในสำนักงานและหน้างาน",
+      "ใช้ Omada Controller ควบคุม Access Point ของ TP-Link และ UniFi Software ควบคุม UniFi Access Point รวมถึงตั้งค่า SSID สำหรับการกระจายสัญญาณ Wi-Fi",
       "ดูแลและตรวจสอบสถานะระบบผ่าน Zabbix Dashboard เพื่อเฝ้าระวังประสิทธิภาพและความผิดปกติของระบบ",
       "ดำเนินการ Backup ข้อมูลจาก Server ลงระบบ NAS เพื่อป้องกันการสูญหายของข้อมูลและรองรับการกู้คืนระบบ (Data Recovery)",
       "ดูแลและดำเนินการ Backup ข้อมูลบนระบบ NAS เพื่อความปลอดภัยและความต่อเนื่องของข้อมูลภายในองค์กร",
+      "จัดทำเอกสาร KPI และเอกสารตามระบบ ISO 9001 เช่น ใบบันทึกการสำรองข้อมูล (Backup)",
       "จัดทำ Stock อุปกรณ์ไอที ตรวจสอบคงคลัง และดำเนินการเปิด PR (Purchase Request) สำหรับอุปกรณ์ด้าน IT",
       "ดูแลและบำรุงรักษาระบบ CCTV ภายในองค์กร รวมถึงตรวจสอบการทำงานของกล้องและอุปกรณ์บันทึกภาพให้พร้อมใช้งาน",
       "สร้างและจัดการ User Account สำหรับระบบ ERP และ NAS รวมถึงกำหนดสิทธิ์การเข้าถึงและดูแล Folder Share ให้เหมาะสมกับการใช้งานของผู้ใช้",
+      "ดูแลและควบคุมสิทธิ์ User ใน Google Workspace และ Microsoft 365",
     ],
     eduSection: { label: "04 / การศึกษา", title: "เส้นทาง", titleEm: "การเรียนรู้.", gpa: "เกรดเฉลี่ย" },
     education: [
@@ -198,13 +203,18 @@ export const content = {
       "Planned and ran a Maintenance Plan for hardware such as computers, network devices and peripherals",
       "Fixed software and basic application issues across the organization to keep systems running smoothly",
       "Maintained and configured Layer 2 and Layer 3 switches (basic configuration) to support the network",
+      "Knowledge of Cisco Layer 2+ and Aruba Layer 3 switches",
+      "Knowledge of FortiGate-100F firewalls, including adding firewall policies, configuring port forwarding and setting up Site-to-Site VPN between the office and the cloud",
       "Provided hardware support to users (User Support), both in the office and on site",
+      "Used Omada Controller to manage TP-Link access points and UniFi Software to manage UniFi access points, including configuring SSIDs for Wi-Fi coverage",
       "Monitored system status on a Zabbix dashboard to watch performance and catch anomalies",
       "Backed up data from servers to NAS to prevent data loss and support Data Recovery",
       "Managed backups on the NAS to keep company data safe and available",
+      "Prepared KPI and ISO 9001 documentation, such as data backup record forms",
       "Kept IT equipment stock, checked inventory and raised PRs (Purchase Requests) for IT equipment",
       "Maintained the company CCTV system, checking cameras and recorders were working and ready",
       "Created and managed User Accounts for ERP and NAS, set access rights and managed Folder Shares for users",
+      "Managed and controlled user permissions in Google Workspace and Microsoft 365",
     ],
     eduSection: { label: "04 / EDUCATION", title: "My learning", titleEm: "journey.", gpa: "GPA" },
     education: [
